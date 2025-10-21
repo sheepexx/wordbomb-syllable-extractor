@@ -10,6 +10,13 @@ It collects each syllable along with its count and provides two simple buttons:
 
 ## Installation
 
+## Quick Install (Tampermonkey)
+1. Install Tampermonkey.
+2. Click to install the userscript:
+   https://raw.githubusercontent.com/sheepexx/wordbomb-syllable-extractor/main/wordbomb-syllable-extractor.user.js
+
+## Offline Download
+
 1. **Clone or download the repository**
    ```bash
    git clone https://github.com/yourname/canvas-syllable-extractor.git

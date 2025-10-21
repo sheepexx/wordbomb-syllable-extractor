@@ -1,12 +1,12 @@
 {
   "manifest_version": 3,
-  "name": "Canvas Syllable Extractor",
-  "version": "0.2.0",
-  "description": "Hookt Canvas fillText, sammelt Silben mit Anzahl und kopiert sie.",
-  "permissions": ["clipboardWrite"],
+  "name": "Wordbomb Syllable Extractor ",
+  "version": "1.0",
+  "description": "Extracts syllables drawn on canvas elements (for example, in Wordbomb).",
+  "permissions": ["clipboardWrite", "scripting", "activeTab"],
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": ["https://wordbomb.io/*"],
       "js": ["content.js"],
       "run_at": "document_start"
     }
@@ -14,7 +14,12 @@
   "web_accessible_resources": [
     {
       "resources": ["pageHook.js"],
-      "matches": ["<all_urls>"]
+      "matches": ["https://wordbomb.io/*"]
     }
-  ]
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
 }

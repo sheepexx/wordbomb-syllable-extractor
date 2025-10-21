@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Wordbomb Syllable Extractor ",
+  "name": "Canvas Syllable Extractor",
   "version": "1.0",
   "description": "Extracts syllables drawn on canvas elements (for example, in Wordbomb).",
   "permissions": ["clipboardWrite", "scripting", "activeTab"],
@@ -16,10 +16,5 @@
       "resources": ["pageHook.js"],
       "matches": ["https://wordbomb.io/*"]
     }
-  ],
-  "icons": {
-    "16": "icon16.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
-  }
+  ]
 }
